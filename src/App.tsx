@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     path: "/id",
     element: <SingleCharacterPage />
   },
-], {basename: "/temp-rep"})
+], {basename: "/tempp"})
 
 
 
