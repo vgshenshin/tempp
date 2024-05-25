@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
@@ -5,6 +6,7 @@ import viteLogo from '/vite.svg';
 import './App.css';
 
 function MainPage() {
+    const navigate = useNavigate()
 
     const [count, setCount] = useState(0);
 
@@ -12,7 +14,7 @@ function MainPage() {
         <>
             <div>
                 <p>New deploy</p>
-                <a href="https://vitejs.dev" target="_blank">
+                <a onClick={() => navigate('id')}>
                     <img src={viteLogo} className="logo" alt="Vite logo" />
                 </a>
                 <a href="https://react.dev" target="_blank">
